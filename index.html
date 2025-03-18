@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 18px;
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="radio"], input[type="text"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label>هل انت مستيقظ ؟</label>
+            <input type="radio" name="awake" value="yes"> نعم
+            <input type="radio" name="awake" value="no"> لا
+            
+            <label>حدد موقعك</label>
+            <input type="text" name="location" placeholder="اكتب موقعك هنا">
+            
+            <button type="submit" class="submit-btn">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
